@@ -12,7 +12,7 @@ namespace ComicBookStore.Models
         public int IssueNumber { get; set;}
         public string DescriptionHtml { get; set; }
         public Artist[] Artist { get; set; }
-        public bool favourite { get; set; }
+        public bool Favourite { get; set; }
 
         public string DisplayText
         {
