@@ -8,9 +8,10 @@ namespace ComicBookStore.Controllers
 {
     public class ComicBookStoreController : Controller
     {
-        public string Detail()
+        public ActionResult Detail()
         {
-            return "Hellow";
+            return View();
+
         }
     }
 }
