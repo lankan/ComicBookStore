@@ -31,5 +31,7 @@ namespace ComicBookStore.Models
             }
                 
         }
+
+        public Artist artist { get; internal set; }
     }
 }
