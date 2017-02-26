@@ -1,36 +1,20 @@
 ﻿@{
-    Layout = null;
-
-
-
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Detail Page";
 
 }
 
-<!DOCTYPE html>
+<h1>@ViewBag.SeriesTitle</h1><br />
+<h2>Issue No: @ViewBag.IssueNo</h2>
+<h5>Description:</h5>
+<div>@Html.Raw(ViewBag.Description)</div>
+<h5>Artist</h5>
+<iv>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title></title>
-</head>
-<body>
-    <div>
-        <h1>@ViewBag.SeriesTitle</h1><br />
-        <h2>Issue No: @ViewBag.IssueNo</h2>
-        <h5>Description:</h5>
-        <div>@Html.Raw(ViewBag.Description)</div>
-        <h5>Artist</h5>
-        <div>
+    <ol>
+    @foreach (string name in ViewBag.Artist)
+    {
+        <text><li> @name</li></text>
+    }
+    </ol>
 
-            <ol>
-            @foreach (string name in ViewBag.Artist)
-            {
-                <text><li> @name</li></text>
-            }
-            </ol>
-        </div>
-
-
-    </div>
-</body>
-</html>
