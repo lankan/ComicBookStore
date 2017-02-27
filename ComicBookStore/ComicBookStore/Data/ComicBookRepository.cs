@@ -65,13 +65,11 @@ namespace ComicBookStore.Data
             
             foreach (ComicBook item in _comicBooks)
             {
-
                 if (item.Id == Id)
                 {
                     comic = item;
                     break;
-                }
-                
+                }               
             }
             return comic;
         } 
