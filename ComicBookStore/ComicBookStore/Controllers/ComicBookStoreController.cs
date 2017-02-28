@@ -32,5 +32,11 @@ namespace ComicBookStore.Controllers
             return View(returnComic);
 
         }
+
+        public ActionResult Index()
+        {
+            return View(_comicBookRepository.getComicBooks());
+        }
+ 
     }
 }
